@@ -6,6 +6,9 @@
 	<title>IDAIM</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="stylesheet" type="text/css" media="screen, print" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/pack.css"/>
+	<script type="text/javascript" src="js/d3.v2.js"></script>
+	<script type="text/javascript" src="js/d3.layout.js"></script>
 </head>
 
 <body>
@@ -54,8 +57,10 @@
 			<div id="divisor"></div>
 			
 			<div id="results-estatal">
+			<div id="results-estatal">
 				<div id="top-resutls">
 					<a class="button-download" href="/" title="Descargar PDF del indice del estado"><span>Descargar PDF</span></a>
+					
 					<div id="form-estados">
 						<a class="button-seek" href="/" title="Buscar por estado">
 							<span>Buscar</span>
@@ -74,33 +79,38 @@
 							<option value="10">Uno</option>
 							<option value="11">Uno</option>
 						</select>
+					</div>
+						
+					<div class="clear"></div>
+						
+					<div id="resultados-estado">
+						<div id="desc-estado">
+							<div id="name-estado">San Luis Potos&iacute;</div>
+							<div class="img-estados slp-img"></div>
 						</div>
 						
-						<div class="clear"></div>
-						
-						<div id="resultados-estado">
-							<div id="desc-estado">
-								<div id="name-estado">San Luis Potos&iacute;</div>
-								<div id="img-estado" class="slp-img"></div>
+						<div id="indice-estado">
+							<div id="indice-pro">
+								<div class="name">&Iacute;ndice progresivo</div>
+								<div class="clear"></div>
+								<div class="circle"><span>7.1</span></div>
 							</div>
 							
-							<div id="indice-estado">
-								<div id="indice-pro">
-									<div class="name">&Iacute;ndice progresivo</div>
-									<div class="clear"></div>
-									<div class="circle"><span>7.1</span></div>
-								</div>
-								
-								<div id="indice-base">
-									<div class="name">&Iacute;ndice base</div>
-									<div class="clear"></div>
-									<div class="circle"><span>7.3</span></div>
-								</div>
+							<div id="indice-base">
+								<div class="name">&Iacute;ndice base</div>
+								<div class="clear"></div>
+								<div class="circle"><span>7.3</span></div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
+				<div id="burbujas">
+					<div id="chart"></div>
+					<script type="text/javascript" src="js/pack.js"></script>
+				</div>
 			</div>
+			
 			<div id="results-nacional"></div>
 		</div>
 		
