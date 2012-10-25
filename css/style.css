@@ -1,0 +1,47 @@
+body { font-family: arial, "PT Sans Caption", arial;  }
+#container { width:100%; height:auto; margin:0 auto; } 
+#header { width:100%; height:159px; background-color:#fff; border-bottom:2px solid #d0d0d0; }
+#logo { float:left; width:340px; height:auto; margin-left:11%; margin-top:40px; }
+
+#menu-top { float:right; width:500px; margin-top:50px; height:auto; margin-right:13%; }
+#menu-top ul { float:right; list-style:none; width:auto; display:inline; }
+#menu-top ul li { margin-right:20px; list-style:none; display:inline; }
+#menu-top ul li a { text-decoration:none; color:#000; font-size:16px; }
+#menu-top ul li a:hover { color:#2daaec; }
+
+#content { width:100%; height:auto;}
+
+#message { width:100%; height:295px; background-color:#f8fcff; border-bottom:2px solid #fff; }
+#message h2 { float:left; width:470px; margin-left:35%; margin-top:90px; font-style:italic; color:#434343; font-size:22px; }
+
+#results-graph { width:100%; height:367px; background-color:#f0f5f9; border-bottom:1px solid #e1e5e8;}
+#results-graph h2 { float:left; margin-left:15%; margin-top:50px; width:100px; font-size:24px; color:#513838; }
+
+#indice-nacional { width:100%; height:83px; background-color:#1a232a; border-bottom:1px solid #7e909a; }
+h3 { float:left; margin-left:15%; color:#feffff; }
+#indice-estatal { width:100%; height:83px; background-color:#466174; border-top: 1px solid #5e798c; border-bottom:1px solid #5e798c; }
+#results-estatal { width:100%; height:1108px; background-color:#c1d8e8; border-bottom:1px solid #d9e7f2; }
+#divisor { width:100%; height:7px; background-color:#c1d8e8; border-bottom:1px solid #b6cddd; }
+
+#footer { width:100%; height:89px; background-color:#ffffff; }
+#footer p { float:left; margin:20px 0 0 105px; width:550px; color:#838383; }
+
+.logos-footer { float:left; margin:15px 0 0 40px; background:url(images/logos-footer.png); width:156px; height:60px; text-indent:-999px; overflow:hidden; }  
+.fundar-logo { background-position:0px 0px; width:81px; height:60px; }
+.article19-logo { background-position:-81px 0px; width:75px; height:60px; }
+
+.social { float:right; margin:3px 10px 0 0; background:url(images/social.png); width:48px; height:14px; text-indent:-999px; overflow:hidden; }
+.social-twitter { background-position:0px 0px; width:10px; height:14px; }
+.social-rss { background-position:-14px 0px; width:14px; height:14px; }
+.social-facebook { background-position:-34px 0px; width:14px; height:14px; }
+
+.downloads { float:right; margin:80px 10px 0 0; background:url(images/downloads.png); width:328px; height:48px; text-indent:-999px; overflow:hidden; }
+.ranking-download { background-position:0px 0px; width:154px; height:48px; }
+.indice-download { background-position:-174px 0px; width:154px; height:48px; }
+.margin-download { margin-right:10%; }
+.margin-left { margin-left:15%; }
+
+.indice-icon { float:right; margin:8px 10% 0 0; }
+.more { cursor:pointer; float:left; margin:22px 0 0 20px; background:url(images/more.png); width:17px; height:17px; text-indent:-999px; overflow:hidden;}
+.close { cursor:pointer; float:left; margin:22px 0 0 20px; background:url(images/close.png); width:17px; height:17px; text-indent:-999px; overflow:hidden; }
+.clear { clear:both; }
