@@ -38,11 +38,3 @@ $(document).ready( function() {
 		$("#indice-estatal .close").hide();	
 	});
 });
-
-function close() {
-	
-}
-
-function open() {
-	
-}

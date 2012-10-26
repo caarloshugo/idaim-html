@@ -16,7 +16,7 @@ var vis = d3.select("#chart").insert("svg:svg", "h2")
   .append("svg:g")
     .attr("transform", "translate(" + (w - r) / 2 + "," + (h - r) / 2 + ")");
 
-d3.json("js/flare.json", function(data) {
+d3.json("../idaim/js/flare.json", function(data) {
   node = root = data;
 
   var nodes = pack.nodes(root);
