@@ -22,5 +22,3 @@ circle.parent:hover {
 circle.child {
   pointer-events: none;
 }
-
-#chart { bakcground-color: #9bcee1; }
