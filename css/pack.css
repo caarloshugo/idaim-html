@@ -1,19 +1,19 @@
-text.parent {
-  fill: #1f77b4;
-}
-
 circle {
-  fill: #ccc;
-  stroke: #999;
+  
   pointer-events: all;
 }
 
 circle.parent {
-  fill: #9bcee1;
-  fill-opacity: .1;
   stroke: steelblue;
 }
 
+#chart  circle { fill: #10b9da; }
+#chart  circle.parent { fill: #9bcee1; }
+#chart text.parent { fill: #1f77b4; }
+
+#chart2 circle { fill: #429cce; }
+#chart2 circle.parent { fill: #6fbdee; color:#fff !important; }
+#chart2 text.parent { fill: #fff; }
 circle.parent:hover {
   stroke: #ff7f0e;
   stroke-width: .5px;
@@ -23,5 +23,5 @@ circle.child {
   pointer-events: none;
 }
 
-#chart { float:left; width:600px; height:600px; border:1px solid #fff; }
-#chart2 { float:left; width:600px; height:600px; border:1px solid #fff; }
+#chart { float:left; margin:40px 0 0 70px; width:600px; height:600px; }
+#chart2 { float:left; margin:40px 0 0 25px; width:600px; height:600px; }
