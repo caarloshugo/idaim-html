@@ -22,3 +22,6 @@ circle.parent:hover {
 circle.child {
   pointer-events: none;
 }
+
+#chart { float:left; width:600px; height:600px; border:1px solid #fff; }
+#chart2 { float:left; width:600px; height:600px; border:1px solid #fff; }

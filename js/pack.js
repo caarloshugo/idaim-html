@@ -1,6 +1,6 @@
-var w = 800,
+var w = 600,
     h = 600,
-    r = 450,
+    r = 500,
     x = d3.scale.linear().range([0, r]),
     y = d3.scale.linear().range([0, r]),
     node,
@@ -16,7 +16,7 @@ var vis = d3.select("#chart").insert("svg:svg", "h2")
   .append("svg:g")
     .attr("transform", "translate(" + (w - r) / 2 + "," + (h - r) / 2 + ")");
 
-d3.json("flare.json", function(data) {
+d3.json("js/flare.json", function(data) {
   node = root = data;
 
   var nodes = pack.nodes(root);
