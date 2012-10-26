@@ -22,7 +22,9 @@ h3 { float:left; margin-left:15%; color:#feffff; }
 
 #indice-estatal { width:100%; height:83px; background-color:#466174; border-top: 1px solid #5e798c; border-bottom:1px solid #5e798c; }
 
-#results-estatal { float:left; width:100%; height:950px; background-color:#c1d8e8; border-bottom:1px solid #d9e7f2; }
+#results-estatal  { float:left; width:100%; height:950px; background-color:#c1d8e8; border-bottom:1px solid #d9e7f2; }
+#results-nacional { float:left; width:100%; height:950px; background-color:#7e909a; border-bottom:1px solid #d9e7f2; }
+
 #form-estados { float:right; width:450px; text-transform:uppercase; }
 #form-estados select { float:right; margin:6px 20px 0 0; width:229px; height:28px; background-color:#fff; border:0; padding:4px; color:#606060; text-transform:uppercase; }
 #resultados-estado { float:left; margin:10px 0 0 15%; width:956px; height:336px; 	-webkit-box-shadow: 0 5px 6px -6px #fff; -moz-box-shadow: 0 5px 6px -6px #fff; box-shadow: 0 5px 6px -6px #fff; }

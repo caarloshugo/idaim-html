@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" media="screen, print" href="css/style.css" />
 	<link type="text/css" rel="stylesheet" href="css/pack.css"/>
 	<script type="text/javascript" src="js/d3.v2.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/d3.layout.js"></script>
 </head>
 
@@ -45,16 +47,18 @@
 			</div>
 			
 			<div id="indice-nacional">
-				<h3>&Iacute;ndice Rep&uacute;blica Mexicana</h3><span class="more">Abrir</span>
+				<h3>&Iacute;ndice Rep&uacute;blica Mexicana</h3><span class="close">Cerrar</span><span class="more">Abrir</span>
 				<img src="css/images/nacional.png" class="indice-icon" alt="Nacional" />
 			</div>
 			
 			<div id="indice-estatal">
-				<h3>&Iacute;ndice por Estado</h3><span class="close">Cerrar</span>
+				<h3>&Iacute;ndice por Estado</h3><span class="more">Abrir</span><span class="close">Cerrar</span>
 				<img src="css/images/estado.png" class="indice-icon" alt="Estado" />
 			</div>
 			
 			<div id="divisor"></div>
+			
+			<div id="results-nacional"></div>
 			
 			<div id="results-estatal">
 				<div id="top-resutls">
@@ -115,7 +119,7 @@
 				</div>
 			</div>
 			
-			<div id="results-nacional"></div>
+			
 		</div>
 		
 		<div id="footer">
