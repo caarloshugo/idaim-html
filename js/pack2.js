@@ -16,7 +16,7 @@ var vis2 = d3.select("#chart2").insert("svg:svg", "h2")
   .append("svg:g")
     .attr("transform", "translate(" + (w2 - r2) / 2 + "," + (h2 - r2) / 2 + ")");
 
-d3.json("../idaim/js/flare.json", function(data2) {
+d3.json("js/flare.json", function(data2) {
   node2 = root2 = data2;
 
   var nodes2 = pack2.nodes(root2);
@@ -30,6 +30,7 @@ d3.json("../idaim/js/flare.json", function(data2) {
       .attr("r", function(d2) { return d2.r; })
       .on("click", function(d2) { return zoom2(node2 == d2 ? root2 : d2); });
 
+  
   vis2.selectAll("text")
       .data(nodes2)
     .enter().append("svg:text")
@@ -39,7 +40,7 @@ d3.json("../idaim/js/flare.json", function(data2) {
       .attr("dy", ".35em")
       .attr("text-anchor", "middle")
       .style("opacity", function(d2) { return d2.r > 20 ? 1 : 0; })
-      .text(function(d2) { return d2.name; });
+      .text(function(d2) {if(d2.depth == 1) { return d2.name; } else { return ""; } });
 
   d3.select(window).on("click", function() { zoom2(root2); });
 });
@@ -56,7 +57,7 @@ function zoom2(d, i) {
       .attr("cx", function(d) { return x2(d.x); })
       .attr("cy", function(d) { return y2(d.y); })
       .attr("r", function(d) { return k * d.r; });
-
+console.log(d);
   t.selectAll("text")
       .attr("x", function(d) { return x2(d.x); })
       .attr("y", function(d) { return y2(d.y); })
