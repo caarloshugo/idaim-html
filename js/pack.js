@@ -1,3 +1,6 @@
+var obj  = '{"name": "","children": [{"name": "Disposiciones Normativas","children": [{"name": "Positivación del DAI","children": [{"name": "1.-", "size": 10000},{"name": "2.-", "size": 9000},{"name": "3.-", "size": 8000},{"name": "4.-", "size": 7000},{"name": "5.-", "size": 6000}]},{"name": "Información restringida","children": [{"name": "6.-", "size": 10000},{"name": "7.-", "size": 9000},{"name": "8.-", "size": 8000}]},{"name": "Sanciones al incumplimiento de la ley","children": [{"name": "9.-", "size": 10000},{"name": "10.-", "size": 10000}]}]},{"name": "Diseño institucional","children": [{"name": "Instituciones internas de acceso a la información","children": [{"name": "11.-", "size": 10000},{"name": "12.-", "size": 9000},{"name": "13.-", "size": 8000},{"name": "14.-", "size": 7000}]},{"name": "Promoción del DAI","children": [{"name": "15.-", "size": 10000},{"name": "16.-", "size": 9000},{"name": "17.-", "size": 8000}]},{"name": "Órganos garantes","children": [{"name": "18.-", "size": 10000},{"name": "19.-", "size": 9000},{"name": "20.-", "size": 8000}]}]},{"name": "Procedimientos","children": [{"name": "Procedimientos de acceso a la información","children": [{"name": "21.-", "size": 10000},{"name": "22.-", "size": 9000},{"name": "23.-", "size": 8000},{"name": "24.-", "size": 7000}]},{"name": "Procedimientos de revisión","children": [{"name": "25.-", "size": 10000},{"name": "26.-", "size": 9000},{"name": "27.-", "size": 8000}]},{"name": "Difusión proactiva de información pública","children": [{"name": "28.-", "size": 10000},{"name": "29.-", "size": 9000},{"name": "30.-", "size": 8000}]}]}]}';
+var json = JSON.parse(obj);
+
 var w = 550,
     h = 450,
     r = 450,
@@ -16,9 +19,9 @@ var vis = d3.select("#chart").insert("svg:svg", "h2")
   .append("svg:g")
     .attr("transform", "translate(" + (w - r) / 2 + "," + (h - r) / 2 + ")");
 
-d3.json("../idaim/js/flare.json", function(data) {
-  node = root = data;
-
+  
+  node = root = json;
+console.log(node);
   var nodes = pack.nodes(root);
   
   vis.selectAll("circle")
@@ -42,7 +45,7 @@ d3.json("../idaim/js/flare.json", function(data) {
       .text(function(d) { return d.name; });
 
   d3.select(window).on("click", function() { zoom(root); });
-});
+
 
 function zoom(d, i) {
   var k = r / d.r / 2;
