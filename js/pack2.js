@@ -40,7 +40,7 @@ var vis2 = d3.select("#chart2").insert("svg:svg", "h2")
       .attr("y", function(d2) { return d2.y; })
       .attr("dy", ".22em")
       .attr("text-anchor", "middle")
-      .style("opacity", function(d2) { return d2.r > 90 ? 1 : 0; })
+      .style("opacity", function(d2) { return d2.r > 60 ? 1 : 0; })
       .text(function(d2) { return d2.name; });
 		
   d3.select(window).on("click", function() { zoom2(root2); });
@@ -64,7 +64,7 @@ function zoom2(d, i) {
   t.selectAll("text")
       .attr("x", function(d) { return x2(d.x); })
       .attr("y", function(d) { return y2(d.y); })
-      .style("opacity", function(d) { console.log(d.r); return k * d.r > 90 ? 1 : 0; });
+      .style("opacity", function(d) { console.log(d.r); return k * d.r > 60 ? 1 : 0; });
 	
   node2 = d;
   d3.event.stopPropagation();
